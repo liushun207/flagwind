@@ -1,24 +1,9 @@
 # flagwind
-这是一个java maven多模块项目 ssm 框架学习
+> 这是一个java maven多模块项目 ssm 框架学习
 
 
 ## 数据库
 ```
-
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : 127.0.0.1
-Source Server Version : 50719
-Source Host           : localhost:3306
-Source Database       : user
-
-Target Server Type    : MYSQL
-Target Server Version : 50719
-File Encoding         : 65001
-
-Date: 2017-08-16 16:47:42
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -37,6 +22,5 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', '测试', '15');
-
 
 ```
