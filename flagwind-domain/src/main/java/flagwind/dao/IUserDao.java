@@ -3,9 +3,10 @@ package flagwind.dao;
 import flagwind.pojo.User;
 
 /**
- * The interface User mapper.
+ * 用户db接口.
  */
-public interface IUserDao {
+public interface IUserDao
+{
     /**
      * Delete by primary key int.
      *
@@ -53,4 +54,13 @@ public interface IUserDao {
      * @return the int
      */
     int updateByPrimaryKey(User record);
+
+    /**
+     * 通过用户名、密码获取用户.
+     *
+     * @param userName 用户名
+     * @param password 密码
+     * @return User
+     */
+    User selectByPassword(String userName, String password);
 }

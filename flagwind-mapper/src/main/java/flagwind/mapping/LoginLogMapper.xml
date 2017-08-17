@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="flagwind.dao.ILoginLogDao" >
+  <resultMap id="BaseResultMap" type="flagwind.pojo.LoginLog" >
+    <id column="LogId" property="logid" jdbcType="BIGINT" />
+    <result column="UserId" property="userid" jdbcType="BIGINT" />
+    <result column="Ip" property="ip" jdbcType="VARCHAR" />
+    <result column="LoginDateTime" property="logindatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    LogId, UserId, Ip, LoginDateTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from loginlog
+    where LogId = #{logid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from loginlog
+    where LogId = #{logid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="flagwind.pojo.LoginLog" >
+    insert into loginlog (LogId, UserId, Ip, 
+      LoginDateTime)
+    values (#{logid,jdbcType=BIGINT}, #{userid,jdbcType=BIGINT}, #{ip,jdbcType=VARCHAR}, 
+      #{logindatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="flagwind.pojo.LoginLog" >
+    insert into loginlog
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="logid != null" >
+        LogId,
+      </if>
+      <if test="userid != null" >
+        UserId,
+      </if>
+      <if test="ip != null" >
+        Ip,
+      </if>
+      <if test="logindatetime != null" >
+        LoginDateTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="logid != null" >
+        #{logid,jdbcType=BIGINT},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=BIGINT},
+      </if>
+      <if test="ip != null" >
+        #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="logindatetime != null" >
+        #{logindatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="flagwind.pojo.LoginLog" >
+    update loginlog
+    <set >
+      <if test="userid != null" >
+        UserId = #{userid,jdbcType=BIGINT},
+      </if>
+      <if test="ip != null" >
+        Ip = #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="logindatetime != null" >
+        LoginDateTime = #{logindatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where LogId = #{logid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="flagwind.pojo.LoginLog" >
+    update loginlog
+    set UserId = #{userid,jdbcType=BIGINT},
+      Ip = #{ip,jdbcType=VARCHAR},
+      LoginDateTime = #{logindatetime,jdbcType=TIMESTAMP}
+    where LogId = #{logid,jdbcType=BIGINT}
+  </update>
+</mapper>

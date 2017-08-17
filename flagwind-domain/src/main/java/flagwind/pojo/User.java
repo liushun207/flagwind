@@ -1,15 +1,24 @@
 package flagwind.pojo;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- * The type User.
+ * 用户.
  */
-public class User
+public class User implements Serializable
 {
     private Long id;
 
     private String name;
 
-    private Integer age;
+    private Integer credits;
+
+    private String password;
+
+    private Date lastvisit;
+
+    private String lastip;
 
     /**
      * Gets id.
@@ -52,22 +61,82 @@ public class User
     }
 
     /**
-     * Gets age.
+     * Gets credits.
      *
-     * @return the age
+     * @return the credits
      */
-    public Integer getAge()
+    public Integer getCredits()
     {
-        return age;
+        return credits;
     }
 
     /**
-     * Sets age.
+     * Sets credits.
      *
-     * @param age the age
+     * @param credits the credits
      */
-    public void setAge(Integer age)
+    public void setCredits(Integer credits)
     {
-        this.age = age;
+        this.credits = credits;
+    }
+
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword()
+    {
+        return password;
+    }
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password)
+    {
+        this.password = password == null ? null : password.trim();
+    }
+
+    /**
+     * Gets lastvisit.
+     *
+     * @return the lastvisit
+     */
+    public Date getLastvisit()
+    {
+        return lastvisit;
+    }
+
+    /**
+     * Sets lastvisit.
+     *
+     * @param lastvisit the lastvisit
+     */
+    public void setLastvisit(Date lastvisit)
+    {
+        this.lastvisit = lastvisit;
+    }
+
+    /**
+     * Gets lastip.
+     *
+     * @return the lastip
+     */
+    public String getLastip()
+    {
+        return lastip;
+    }
+
+    /**
+     * Sets lastip.
+     *
+     * @param lastip the lastip
+     */
+    public void setLastip(String lastip)
+    {
+        this.lastip = lastip == null ? null : lastip.trim();
     }
 }

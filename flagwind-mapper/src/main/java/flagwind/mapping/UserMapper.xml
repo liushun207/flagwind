@@ -4,10 +4,13 @@
   <resultMap id="BaseResultMap" type="flagwind.pojo.User" >
     <id column="Id" property="id" jdbcType="BIGINT" />
     <result column="Name" property="name" jdbcType="VARCHAR" />
-    <result column="Age" property="age" jdbcType="INTEGER" />
+    <result column="Credits" property="credits" jdbcType="INTEGER" />
+    <result column="Password" property="password" jdbcType="VARCHAR" />
+    <result column="LastVisit" property="lastvisit" jdbcType="TIMESTAMP" />
+    <result column="LastIp" property="lastip" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    Id, Name, Age
+    Id, Name, Credits, Password, LastVisit, LastIp
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
@@ -20,8 +23,12 @@
     where Id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="flagwind.pojo.User" >
-    insert into user (Id, Name, Age)
-    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER})
+    insert into user (Id, Name, Credits, 
+      Password, LastVisit, LastIp
+      )
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{credits,jdbcType=INTEGER}, 
+      #{password,jdbcType=VARCHAR}, #{lastvisit,jdbcType=TIMESTAMP}, #{lastip,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="flagwind.pojo.User" >
     insert into user
@@ -32,8 +39,17 @@
       <if test="name != null" >
         Name,
       </if>
-      <if test="age != null" >
-        Age,
+      <if test="credits != null" >
+        Credits,
+      </if>
+      <if test="password != null" >
+        Password,
+      </if>
+      <if test="lastvisit != null" >
+        LastVisit,
+      </if>
+      <if test="lastip != null" >
+        LastIp,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
@@ -43,8 +59,17 @@
       <if test="name != null" >
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="age != null" >
-        #{age,jdbcType=INTEGER},
+      <if test="credits != null" >
+        #{credits,jdbcType=INTEGER},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="lastvisit != null" >
+        #{lastvisit,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastip != null" >
+        #{lastip,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -54,8 +79,17 @@
       <if test="name != null" >
         Name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="age != null" >
-        Age = #{age,jdbcType=INTEGER},
+      <if test="credits != null" >
+        Credits = #{credits,jdbcType=INTEGER},
+      </if>
+      <if test="password != null" >
+        Password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="lastvisit != null" >
+        LastVisit = #{lastvisit,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastip != null" >
+        LastIp = #{lastip,jdbcType=VARCHAR},
       </if>
     </set>
     where Id = #{id,jdbcType=BIGINT}
@@ -63,7 +97,18 @@
   <update id="updateByPrimaryKey" parameterType="flagwind.pojo.User" >
     update user
     set Name = #{name,jdbcType=VARCHAR},
-      Age = #{age,jdbcType=INTEGER}
+      Credits = #{credits,jdbcType=INTEGER},
+      Password = #{password,jdbcType=VARCHAR},
+      LastVisit = #{lastvisit,jdbcType=TIMESTAMP},
+      LastIp = #{lastip,jdbcType=VARCHAR}
     where Id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="selectByPassword" resultMap="BaseResultMap" parameterType="java.util.Map" >
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where name = #{name，jdbcType=VARCHAR}
+    and password =  #{password，jdbcType=VARCHAR}
+  </select>
 </mapper>
