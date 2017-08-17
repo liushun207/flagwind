@@ -27,6 +27,14 @@ public class UserController
         return user;
     }
 
+    @RequestMapping(value = "/get",method = RequestMethod.GET)
+    @ResponseBody
+    public User getUser(String name, String password)
+    {
+        User user = this.userService.getUser(name, password);
+        return user;
+    }
+
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     @ResponseBody
     public String test() throws Exception

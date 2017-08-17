@@ -104,11 +104,11 @@
     where Id = #{id,jdbcType=BIGINT}
   </update>
 
-  <select id="selectByPassword" resultMap="BaseResultMap" parameterType="java.util.Map" >
+  <select id="selectByPassword" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from user
-    where name = #{name，jdbcType=VARCHAR}
-    and password =  #{password，jdbcType=VARCHAR}
+    where Name = #{name,jdbcType=VARCHAR}
+    and Password =  #{password,jdbcType=VARCHAR}
   </select>
 </mapper>

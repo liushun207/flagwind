@@ -1,6 +1,8 @@
 package flagwind.dao;
 
 import flagwind.pojo.User;
+import org.apache.ibatis.annotations.Param;
+import sun.security.util.Password;
 
 /**
  * 用户db接口.
@@ -58,9 +60,9 @@ public interface IUserDao
     /**
      * 通过用户名、密码获取用户.
      *
-     * @param userName 用户名
+     * @param name 用户名
      * @param password 密码
      * @return User
      */
-    User selectByPassword(String userName, String password);
+    User selectByPassword(@Param("name") String name, @Param("password") String password);
 }
