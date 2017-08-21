@@ -1,48 +1,48 @@
-# Intellij SSM ÏîÄ¿´î½¨
+# Intellij SSM é¡¹ç›®æ­å»º
 
-±êÇ©£¨¿Õ¸ñ·Ö¸ô£©£º java
+æ ‡ç­¾ï¼ˆç©ºæ ¼åˆ†éš”ï¼‰ï¼š java
 
 ---
 
-## Ä¿Â¼
+## ç›®å½•
 
 [TOC]
 
 ---
 
-## ÃèÊö
-> ĞÂ½¨ÏîÄ¿ ¶¼ĞèÒªÉèÖÃ±àÂë
+## æè¿°
+> æ–°å»ºé¡¹ç›® éƒ½éœ€è¦è®¾ç½®ç¼–ç 
 Setting -> Editor -> File Encoding
 
-> ÅäÖÃÒÔÏîÄ¿ÖĞÎªÖ÷
+> é…ç½®ä»¥é¡¹ç›®ä¸­ä¸ºä¸»
 
-## »·¾³ËùĞè
->  ¶¼¿ÉÔÚ¹ÙÍøÏÂÔØ
-1. °²×°`java8`»·¾³
-2. °²×°`maven`»·¾³
-3. °²×°`tomcat`»·¾³
-4. `mybatis`Éú³É´úÂë¹¤¾ß
-5. `mysql`Êı¾İ¿â
-6. `navicat`Êı¾İ¿â¹ÜÀí¹¤¾ß
+## ç¯å¢ƒæ‰€éœ€
+>  éƒ½å¯åœ¨å®˜ç½‘ä¸‹è½½
+1. å®‰è£…`java8`ç¯å¢ƒ
+2. å®‰è£…`maven`ç¯å¢ƒ
+3. å®‰è£…`tomcat`ç¯å¢ƒ
+4. `mybatis`ç”Ÿæˆä»£ç å·¥å…·
+5. `mysql`æ•°æ®åº“
+6. `navicat`æ•°æ®åº“ç®¡ç†å·¥å…·
 
-## Intellij tomcat ÅäÖÃ
->  ²Î¿¼µØÖ·£º`http://www.cnblogs.com/Miracle-Maker/articles/6476687.html`
-1. `Run` -> `Edit Configurations` -> `+`ºÅ -> Ñ¡Ôñ `Tomcat Server` -> `Local`
-2. `Server` ÅäÖÃ, ¾ßÌåÇë²Î¿¼ÉÏÃæµØÖ·
-3. `Deployment`ÅäÖÃ, ¾ßÌåÇë²Î¿¼ÉÏÃæµØÖ·
+## Intellij tomcat é…ç½®
+>  å‚è€ƒåœ°å€ï¼š`http://www.cnblogs.com/Miracle-Maker/articles/6476687.html`
+1. `Run` -> `Edit Configurations` -> `+`å· -> é€‰æ‹© `Tomcat Server` -> `Local`
+2. `Server` é…ç½®, å…·ä½“è¯·å‚è€ƒä¸Šé¢åœ°å€
+3. `Deployment`é…ç½®, å…·ä½“è¯·å‚è€ƒä¸Šé¢åœ°å€
 
-## Maven °²×°¼°ÅäÖÃ
+## Maven å®‰è£…åŠé…ç½®
 
-- `Maven`»·¾³±äÁ¿
+- `Maven`ç¯å¢ƒå˜é‡
 
 > 
-1. ĞÂ½¨±äÁ¿Ãû£º`MAVEN_HOME`  ±äÁ¿Öµ£º`E:\apache-maven-3.3.9`£¨ÕâÊÇÎÒµÄ`maven`Â·¾¶£©
-2. ±à¼­±äÁ¿Ãû£º`Path`  ÔÚ×îÇ°Ãæ¼ÓÉÏ£º`%MAVEN_HOME%\bin;`£¨×¢Òâ£¬×îºóÒªÓĞ¸ö";"×÷Îª·Ö¸ô·û£©
+1. æ–°å»ºå˜é‡åï¼š`MAVEN_HOME`  å˜é‡å€¼ï¼š`E:\apache-maven-3.3.9`ï¼ˆè¿™æ˜¯æˆ‘çš„`maven`è·¯å¾„ï¼‰
+2. ç¼–è¾‘å˜é‡åï¼š`Path`  åœ¨æœ€å‰é¢åŠ ä¸Šï¼š`%MAVEN_HOME%\bin;`ï¼ˆæ³¨æ„ï¼Œæœ€åè¦æœ‰ä¸ª";"ä½œä¸ºåˆ†éš”ç¬¦ï¼‰
     
    
-**- ÔÚ`E:\apache-maven-3.3.9\conf` µÄ`settings.xml` ÎÄ¼şÀïÅäÖÃ`mirrors`µÄ×Ó½Úµã£¬Ìí¼ÓÈçÏÂ`mirror`**
+**- åœ¨`E:\apache-maven-3.3.9\conf` çš„`settings.xml` æ–‡ä»¶é‡Œé…ç½®`mirrors`çš„å­èŠ‚ç‚¹ï¼Œæ·»åŠ å¦‚ä¸‹`mirror`**
 ```
-    <!--Ö¸¶¨±¾µØ²Ö¿â-->
+    <!--æŒ‡å®šæœ¬åœ°ä»“åº“-->
     <localRepository>E:\apache-maven-3.3.9\localRepository</localRepository>
 
     <mirror>
@@ -53,72 +53,72 @@ Setting -> Editor -> File Encoding
     </mirror> 
 ```
 
-- `Intellij`ÖĞÅäÖÃ`maven`
+- `Intellij`ä¸­é…ç½®`maven`
 
 > 
 1. File -> Settings -> Build -> Build Tool -> Maven
     - Maven home directory => E:/apache-maven-3.3.9
     - User setting file => E:\apache-maven-3.3.9\conf\settings.xml
     - Local Repository => E:\apache-maven-3.3.9\localRepository
-2. ²Î¿¼µØÖ·: http://blog.csdn.net/qq_32588349/article/details/51461182
+2. å‚è€ƒåœ°å€: http://blog.csdn.net/qq_32588349/article/details/51461182
     
-## `SSM` ÏîÄ¿´´½¨
+## `SSM` é¡¹ç›®åˆ›å»º
 
 > 
-1. ²Î¿¼µØÖ·: 
+1. å‚è€ƒåœ°å€: 
 **http://blog.csdn.net/w8897282/article/details/71173211**
 http://www.cnblogs.com/jingpeipei/p/6291071.html
 http://blog.csdn.net/jiangpeng59/article/details/52118664
 http://blog.csdn.net/gebitan505/article/details/44455235/
 
-## `Maven` `pom.xml` ÅäÖÃ
+## `Maven` `pom.xml` é…ç½®
 
 
-## `jdbc.properties` ÅäÖÃ
+## `jdbc.properties` é…ç½®
 ```
 driver=com.mysql.jdbc.Driver
 url=jdbc:mysql://localhost:3306/user?useUnicode=true&characterEncoding=utf-8
 username=root
 password=123456
-#¶¨Òå³õÊ¼Á¬½ÓÊı
+#å®šä¹‰åˆå§‹è¿æ¥æ•°
 initialSize=0
-#¶¨Òå×î´óÁ¬½ÓÊı
+#å®šä¹‰æœ€å¤§è¿æ¥æ•°
 maxActive=20
-#¶¨Òå×î´ó¿ÕÏĞ
+#å®šä¹‰æœ€å¤§ç©ºé—²
 maxIdle=20
-#¶¨Òå×îĞ¡¿ÕÏĞ
+#å®šä¹‰æœ€å°ç©ºé—²
 minIdle=1
-#¶¨Òå×î³¤µÈ´ıÊ±¼ä
+#å®šä¹‰æœ€é•¿ç­‰å¾…æ—¶é—´
 maxWait=60000
 ```
 
-## `log4j.properties` ÅäÖÃ
+## `log4j.properties` é…ç½®
 
-> ²Î¿¼µØÖ·: http://blog.csdn.net/zhshulin/article/details/37937365
+> å‚è€ƒåœ°å€: http://blog.csdn.net/zhshulin/article/details/37937365
 
 ```
-#¶¨ÒåLOGÊä³ö¼¶±ğ
+#å®šä¹‰LOGè¾“å‡ºçº§åˆ«
 log4j.rootLogger=INFO,Console,File
-#¶¨ÒåÈÕÖ¾Êä³öÄ¿µÄµØÎª¿ØÖÆÌ¨
+#å®šä¹‰æ—¥å¿—è¾“å‡ºç›®çš„åœ°ä¸ºæ§åˆ¶å°
 log4j.appender.Console=org.apache.log4j.ConsoleAppender
 log4j.appender.Console.Target=System.out
-#¿ÉÒÔÁé»îµØÖ¸¶¨ÈÕÖ¾Êä³ö¸ñÊ½£¬ÏÂÃæÒ»ĞĞÊÇÖ¸¶¨¾ßÌåµÄ¸ñÊ½
+#å¯ä»¥çµæ´»åœ°æŒ‡å®šæ—¥å¿—è¾“å‡ºæ ¼å¼ï¼Œä¸‹é¢ä¸€è¡Œæ˜¯æŒ‡å®šå…·ä½“çš„æ ¼å¼
 log4j.appender.Console.layout = org.apache.log4j.PatternLayout
 log4j.appender.Console.layout.ConversionPattern=[%c] - %m%n
 
-#ÎÄ¼ş´óĞ¡µ½´ïÖ¸¶¨³ß´çµÄÊ±ºò²úÉúÒ»¸öĞÂµÄÎÄ¼ş
+#æ–‡ä»¶å¤§å°åˆ°è¾¾æŒ‡å®šå°ºå¯¸çš„æ—¶å€™äº§ç”Ÿä¸€ä¸ªæ–°çš„æ–‡ä»¶
 log4j.appender.File = org.apache.log4j.RollingFileAppender
-#Ö¸¶¨Êä³öÄ¿Â¼
+#æŒ‡å®šè¾“å‡ºç›®å½•
 log4j.appender.File.File = logs/ssm.log
-#¶¨ÒåÎÄ¼ş×î´ó´óĞ¡
+#å®šä¹‰æ–‡ä»¶æœ€å¤§å¤§å°
 log4j.appender.File.MaxFileSize = 10MB
-# Êä³öËùÒÔÈÕÖ¾£¬Èç¹û»»³ÉDEBUG±íÊ¾Êä³öDEBUGÒÔÉÏ¼¶±ğÈÕÖ¾
+# è¾“å‡ºæ‰€ä»¥æ—¥å¿—ï¼Œå¦‚æœæ¢æˆDEBUGè¡¨ç¤ºè¾“å‡ºDEBUGä»¥ä¸Šçº§åˆ«æ—¥å¿—
 log4j.appender.File.Threshold = ALL
 log4j.appender.File.layout = org.apache.log4j.PatternLayout
 log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%c]%m%n
 ```
 
-## WEB-INF->web.xml ÅäÖÃ
+## WEB-INF->web.xml é…ç½®
 ```
 <!DOCTYPE web-app PUBLIC
         "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
@@ -129,13 +129,13 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
   <display-name>Archetype Created Web Application</display-name>
-  <!-- SpringºÍmybatisµÄÅäÖÃÎÄ¼ş -->
+  <!-- Springå’Œmybatisçš„é…ç½®æ–‡ä»¶ -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:spring-mybatis.xml</param-value>
   </context-param>
 
-  <!--Log4jÅäÖÃ-->
+  <!--Log4jé…ç½®-->
   <context-param>
     <param-name>log4jRefreshInterval</param-name>
     <param-value>60000</param-value>
@@ -144,7 +144,7 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
   </listener>
 
-  <!-- ±àÂë¹ıÂËÆ÷ -->
+  <!-- ç¼–ç è¿‡æ»¤å™¨ -->
   <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -159,22 +159,22 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
-  <!--Spring¼àÌıÆ÷ ApplicationContext ÔØÈë -->
+  <!--Springç›‘å¬å™¨ ApplicationContext è½½å…¥ -->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-  <!-- ·ÀÖ¹SpringÄÚ´æÒç³ö¼àÌıÆ÷ -->
+  <!-- é˜²æ­¢Springå†…å­˜æº¢å‡ºç›‘å¬å™¨ -->
   <listener>
     <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
   </listener>
 
-  <!-- Spring MVC ºËĞÄÅäÖÃ¿ªÊ¼ -->
+  <!-- Spring MVC æ ¸å¿ƒé…ç½®å¼€å§‹ -->
   <servlet>
     <servlet-name>mvc-dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <!-- ¿ÉÒÔÍ¨¹ıcontextConfigLocationÀ´×Ô¶¨ÒåSpringMVCÅäÖÃÎÄ¼şµÄÎ»ÖÃ£¬Èç²»Ö¸¶¨£¬ÔòÄ¬ÈÏÔÚWEB-INFÄ¿Â¼ÏÂ£¬Ãû³ÆÎª[<servlet-name>]-servlet.xml£¬
-         ´ËÊ±ÎÄ¼şÃû±ØĞëÎª[<servlet-name>]-servlet.xml£¬·ñÔò»á³ö´í-->
-    <!--ÒÔÏÂinit-paramÊÇ×Ô¶¨ÒåSpringMVCµÄÅäÖÃÎÄ¼şµÄÎ»ÖÃ -->
+    <!-- å¯ä»¥é€šè¿‡contextConfigLocationæ¥è‡ªå®šä¹‰SpringMVCé…ç½®æ–‡ä»¶çš„ä½ç½®ï¼Œå¦‚ä¸æŒ‡å®šï¼Œåˆ™é»˜è®¤åœ¨WEB-INFç›®å½•ä¸‹ï¼Œåç§°ä¸º[<servlet-name>]-servlet.xmlï¼Œ
+         æ­¤æ—¶æ–‡ä»¶åå¿…é¡»ä¸º[<servlet-name>]-servlet.xmlï¼Œå¦åˆ™ä¼šå‡ºé”™-->
+    <!--ä»¥ä¸‹init-paramæ˜¯è‡ªå®šä¹‰SpringMVCçš„é…ç½®æ–‡ä»¶çš„ä½ç½® -->
     <init-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:spring-mvc.xml</param-value>
@@ -183,15 +183,15 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
   </servlet>
 
 
-  <!-- À¹½ØÉèÖÃ -->
+  <!-- æ‹¦æˆªè®¾ç½® -->
   <servlet-mapping>
     <servlet-name>mvc-dispatcher</servlet-name>
-    <!-- ´Ë´¦¿ÉÒÔ¿ÉÒÔÅäÖÃ³É*.do£¬¶ÔÓ¦strutsµÄºó×ºÏ°¹ß -->
+    <!-- æ­¤å¤„å¯ä»¥å¯ä»¥é…ç½®æˆ*.doï¼Œå¯¹åº”strutsçš„åç¼€ä¹ æƒ¯ -->
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  <!-- Spring MVC ºËĞÄÅäÖÃ½áÊø -->
+  <!-- Spring MVC æ ¸å¿ƒé…ç½®ç»“æŸ -->
 
-  <!-- ÅäÖÃSESSION³¬Ê±£¬µ¥Î»ÊÇ·ÖÖÓ -->
+  <!-- é…ç½®SESSIONè¶…æ—¶ï¼Œå•ä½æ˜¯åˆ†é’Ÿ -->
   <session-config>
     <session-timeout>15</session-timeout>
   </session-config>
@@ -212,10 +212,10 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
                         http://www.springframework.org/schema/context/spring-context-3.1.xsd
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
-    <!-- ×Ô¶¯É¨Ãè¸Ã°ü£¬Ê¹SpringMVCÈÏÎª°üÏÂÓÃÁË@controller×¢½âµÄÀàÊÇ¿ØÖÆÆ÷ -->
+    <!-- è‡ªåŠ¨æ‰«æè¯¥åŒ…ï¼Œä½¿SpringMVCè®¤ä¸ºåŒ…ä¸‹ç”¨äº†@controlleræ³¨è§£çš„ç±»æ˜¯æ§åˆ¶å™¨ -->
     <context:component-scan base-package="com.springmvc.controller" />
 
-    <!--±ÜÃâIEÖ´ĞĞAJAXÊ±£¬·µ»ØJSON³öÏÖÏÂÔØÎÄ¼ş -->
+    <!--é¿å…IEæ‰§è¡ŒAJAXæ—¶ï¼Œè¿”å›JSONå‡ºç°ä¸‹è½½æ–‡ä»¶ -->
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">
@@ -224,34 +224,34 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
             </list>
         </property>
     </bean>
-    <!-- Æô¶¯SpringMVCµÄ×¢½â¹¦ÄÜ£¬Íê³ÉÇëÇóºÍ×¢½âPOJOµÄÓ³Éä -->
+    <!-- å¯åŠ¨SpringMVCçš„æ³¨è§£åŠŸèƒ½ï¼Œå®Œæˆè¯·æ±‚å’Œæ³¨è§£POJOçš„æ˜ å°„ -->
     <bean
             class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
         <property name="messageConverters">
             <list>
-                <ref bean="mappingJacksonHttpMessageConverter" />   <!-- JSON×ª»»Æ÷ -->
+                <ref bean="mappingJacksonHttpMessageConverter" />   <!-- JSONè½¬æ¢å™¨ -->
             </list>
         </property>
     </bean>
-    <!-- ¶¨ÒåÌø×ªµÄÎÄ¼şµÄÇ°ºó×º £¬ÊÓÍ¼Ä£Ê½ÅäÖÃ-->
+    <!-- å®šä¹‰è·³è½¬çš„æ–‡ä»¶çš„å‰åç¼€ ï¼Œè§†å›¾æ¨¡å¼é…ç½®-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <!-- ÕâÀïµÄÅäÖÃÎÒµÄÀí½âÊÇ×Ô¶¯¸øºóÃæactionµÄ·½·¨returnµÄ×Ö·û´®¼ÓÉÏÇ°×ººÍºó×º£¬±ä³ÉÒ»¸ö ¿ÉÓÃµÄurlµØÖ· -->
+        <!-- è¿™é‡Œçš„é…ç½®æˆ‘çš„ç†è§£æ˜¯è‡ªåŠ¨ç»™åé¢actionçš„æ–¹æ³•returnçš„å­—ç¬¦ä¸²åŠ ä¸Šå‰ç¼€å’Œåç¼€ï¼Œå˜æˆä¸€ä¸ª å¯ç”¨çš„urlåœ°å€ -->
         <property name="prefix" value="/WEB-INF/page/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <!-- ÅäÖÃÎÄ¼şÉÏ´«£¬Èç¹ûÃ»ÓĞÊ¹ÓÃÎÄ¼şÉÏ´«¿ÉÒÔ²»ÓÃÅäÖÃ£¬µ±È»Èç¹û²»Åä£¬ÄÇÃ´ÅäÖÃÎÄ¼şÖĞÒ²²»±ØÒıÈëÉÏ´«×é¼ş°ü -->
+    <!-- é…ç½®æ–‡ä»¶ä¸Šä¼ ï¼Œå¦‚æœæ²¡æœ‰ä½¿ç”¨æ–‡ä»¶ä¸Šä¼ å¯ä»¥ä¸ç”¨é…ç½®ï¼Œå½“ç„¶å¦‚æœä¸é…ï¼Œé‚£ä¹ˆé…ç½®æ–‡ä»¶ä¸­ä¹Ÿä¸å¿…å¼•å…¥ä¸Šä¼ ç»„ä»¶åŒ… -->
     <bean id="multipartResolver"
           class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <!-- Ä¬ÈÏ±àÂë -->
+        <!-- é»˜è®¤ç¼–ç  -->
         <property name="defaultEncoding" value="utf-8" />
-        <!-- ÎÄ¼ş´óĞ¡×î´óÖµ -->
+        <!-- æ–‡ä»¶å¤§å°æœ€å¤§å€¼ -->
         <property name="maxUploadSize" value="10485760000" />
-        <!-- ÄÚ´æÖĞµÄ×î´óÖµ -->
+        <!-- å†…å­˜ä¸­çš„æœ€å¤§å€¼ -->
         <property name="maxInMemorySize" value="40960" />
     </bean>
 
-    <!-- ´¦ÀíÇëÇó·µ»Øjson×Ö·û´®µÄÖĞÎÄÂÒÂëÎÊÌâ -->
+    <!-- å¤„ç†è¯·æ±‚è¿”å›jsonå­—ç¬¦ä¸²çš„ä¸­æ–‡ä¹±ç é—®é¢˜ -->
     <mvc:annotation-driven>
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -279,9 +279,9 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
                         http://www.springframework.org/schema/context/spring-context-3.1.xsd
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
-    <!-- ×Ô¶¯É¨Ãè -->
+    <!-- è‡ªåŠ¨æ‰«æ -->
     <context:component-scan base-package="com.springmvc" />
-    <!-- ÒıÈëÅäÖÃÎÄ¼ş -->
+    <!-- å¼•å…¥é…ç½®æ–‡ä»¶ -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:jdbc.properties" />
@@ -293,34 +293,34 @@ log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-dd HH\:mm\:ss}][%
         <property name="url" value="${url}" />
         <property name="username" value="${username}" />
         <property name="password" value="${password}" />
-        <!-- ³õÊ¼»¯Á¬½Ó´óĞ¡ -->
+        <!-- åˆå§‹åŒ–è¿æ¥å¤§å° -->
         <property name="initialSize" value="${initialSize}"></property>
-        <!-- Á¬½Ó³Ø×î´óÊıÁ¿ -->
+        <!-- è¿æ¥æ± æœ€å¤§æ•°é‡ -->
         <property name="maxActive" value="${maxActive}"></property>
-        <!-- Á¬½Ó³Ø×î´ó¿ÕÏĞ -->
+        <!-- è¿æ¥æ± æœ€å¤§ç©ºé—² -->
         <property name="maxIdle" value="${maxIdle}"></property>
-        <!-- Á¬½Ó³Ø×îĞ¡¿ÕÏĞ -->
+        <!-- è¿æ¥æ± æœ€å°ç©ºé—² -->
         <property name="minIdle" value="${minIdle}"></property>
-        <!-- »ñÈ¡Á¬½Ó×î´óµÈ´ıÊ±¼ä -->
+        <!-- è·å–è¿æ¥æœ€å¤§ç­‰å¾…æ—¶é—´ -->
         <property name="maxWait" value="${maxWait}"></property>
     </bean>
 
-    <!-- springºÍMyBatisÍêÃÀÕûºÏ£¬²»ĞèÒªmybatisµÄÅäÖÃÓ³ÉäÎÄ¼ş -->
+    <!-- springå’ŒMyBatiså®Œç¾æ•´åˆï¼Œä¸éœ€è¦mybatisçš„é…ç½®æ˜ å°„æ–‡ä»¶ -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!--<property name="configLocation" value="classpath:/mybatis-config.xml"></property>-->
-        <!-- ×Ô¶¯É¨Ãèmapping.xmlÎÄ¼ş -->
+        <!-- è‡ªåŠ¨æ‰«æmapping.xmlæ–‡ä»¶ -->
         <property name="mapperLocations" value="classpath:com/springmvc/mapping/*.xml"></property>
 
     </bean>
 
-    <!-- DAO½Ó¿ÚËùÔÚ°üÃû£¬Spring»á×Ô¶¯²éÕÒÆäÏÂµÄÀà -->
+    <!-- DAOæ¥å£æ‰€åœ¨åŒ…åï¼ŒSpringä¼šè‡ªåŠ¨æŸ¥æ‰¾å…¶ä¸‹çš„ç±» -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.springmvc.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
-    <!-- (ÊÂÎñ¹ÜÀí)transaction manager, use JtaTransactionManager for global tx -->
+    <!-- (äº‹åŠ¡ç®¡ç†)transaction manager, use JtaTransactionManager for global tx -->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource" />
